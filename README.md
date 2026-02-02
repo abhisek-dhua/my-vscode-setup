@@ -22,13 +22,12 @@ A minimal reference for my custom VS Code configuration.
 
 ```json
 {
-  "prettier.semi": false,
+  // editor customization
   "editor.wordWrap": "on",
   "git.confirmSync": false,
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.linkedEditing": true,
-  // "editor.fontWeight": "bold",
   "database-client.autoSync": true,
   "gitlens.codeLens.enabled": false,
   "editor.cursorBlinking": "expand",
@@ -45,11 +44,26 @@ A minimal reference for my custom VS Code configuration.
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.fontFamily": "'fira code', 'Cascadia Code', Consolas, 'Courier New', Monospace",
+  // prettier customization
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.endOfLine": "lf",
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always",
+  "prettier.bracketSameLine": true,
+  "prettier.quoteProps": "as-needed",
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  // vscode workbench customization
   "workbench.colorCustomizations": {
     "statusBar.background": "#2d2d2d",
     "statusBar.noFolderBackground": "#2d2d2d",
     "statusBar.debuggingBackground": "#c74e39",
-    "statusBar.foreground": "#cccccc"
+    "statusBar.foreground": "#cccccc",
   },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -76,30 +90,30 @@ A minimal reference for my custom VS Code configuration.
           "keyword.control.flow.js",
           "keyword.control.from.js",
           "keyword.control.from.ts",
-          "keyword.control.from.tsx"
+          "keyword.control.from.tsx",
         ],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": "italic",
           // "foreground": "#82AAFF"
-        }
+        },
       },
       {
         "scope": [
           // the following elements will be displayed in bold
-          "entity.name.type.class" // class names
+          "entity.name.type.class", // class names
         ],
         "settings": {
-          "fontStyle": ""
-        }
+          "fontStyle": "",
+        },
       },
       {
         "scope": [
           // the following elements will be displayed in bold and italic
-          "entity.name.section.markdown" // markdown headlines
+          "entity.name.section.markdown", // markdown headlines
         ],
         "settings": {
-          "fontStyle": "italic"
-        }
+          "fontStyle": "italic",
+        },
       },
       {
         "scope": [
@@ -112,13 +126,14 @@ A minimal reference for my custom VS Code configuration.
           "constant.numeric.json",
           "keyword.other.unit.px.css",
           "constant.numeric.decimal.js",
-          "entity.other.attribute-name.class.css"
+          "entity.other.attribute-name.class.css",
         ],
         "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  }
+          "fontStyle": "",
+        },
+      },
+    ],
+  },
 }
+
 
